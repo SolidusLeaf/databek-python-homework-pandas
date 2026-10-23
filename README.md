@@ -140,7 +140,7 @@ python main.py
 
 ```
 databek-python-homework-pandas/
-├── main.py        # checks, conversions, cleaning and aggregation
+├── script.py        # checks, conversions, cleaning and aggregation
 ├── orders.csv     # simulated, intentionally messy dataset
 └── README.md
 ```
