@@ -141,7 +141,6 @@ def drop_incorrect_date(df, column_name, dformat="%Y-%m-%d %H:%M:%S"):
     df[column_name] = pd.to_datetime(df[column_name], format=dformat, errors='coerce')
     df = df[df[column_name].notnull() & (df[column_name] <= today)]
     return df
-from pathlib import Path
 
 DATA_PATH = Path(__file__).parent / "orders.csv"
 data = pd.read_csv(DATA_PATH)
